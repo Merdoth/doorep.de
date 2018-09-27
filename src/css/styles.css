@@ -17,7 +17,15 @@ button:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+.navbar {
+    height: 127px;
+}
 
+.navbar-brand {
+    font-weight: 700;
+    font-size: 27px;
+    margin-left: 80px;
+}
 .loginBtn {
     margin: 0 40px;
     padding: 5px 40px;
@@ -33,21 +41,82 @@ button:focus {
     display: flex;
     flex-direction: row;  
     align-items: center;
-    background: #ccc8c8;
-    height: 5%;
-    width: 10%;
+    margin-top: 118px;
+    box-shadow: 0 0 30px #efefef;
 }
-.howItWorksInstruction, .furtherInfo, .furtherInfoBtn, .companies-logo, .benefitIcon, .faqSet, .footer1, .footer2 {
+
+.bonus > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    height: 100px;
+    width: 241px;
+    border-right: 1px solid #f9f9f9;
+    border-left: 1px solid #f9f9f9;
+    color: #a0a0a0;
+}
+
+.worksImg {
+    padding: 0px 55px;
+    height: 494px;
+    width: 400px;
+}
+
+.card-img {
+    object-fit: cover;
+}
+.bonus span > p {
+    font-size: 13px;
+    text-align: center;
+}
+.bonus > span i {
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+.howItWorksInstruction, .furtherInfo, .companies-logo, .benefitIcon, .faqSet, .footer1, .footer2 {
     display: flex;
     flex-direction: row;  
     align-items: center;
     justify-content: center;
 }
 
+.furtherInfoBtn {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+}
+
+.card-container {
+    width: 18rem;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 0;
+}
+.card-container img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-container > .card-body {
+    font-size: 12px;
+    text-align: center;
+}
+.card-container > .card-body h5 {
+    font-size: 16px;
+}
+.card-container > .card-body p {
+    color: #e0e0e0;
+}
+
 .titleWrapper {
     display: flex;
     margin-bottom: 7%;
     justify-content: center;
+    margin-top: 18%;
 }
 .header-caption {
     font-size: 30px;
@@ -63,10 +132,10 @@ button:focus {
 }
 
 .create-btn {
-    line-height: 2.1;
-    font-size: 13px;
+    line-height: 2.5;
+    font-size: 14px;
     font-weight: 100;
-    width: 200px;
+    width: 216px;
     background-color: #4373f9;
     border-radius: 5px;
     box-shadow: 7px 12px 16px 6px #e5ecfe;
@@ -74,7 +143,7 @@ button:focus {
 
 .create-btn-caption {
     margin-top: 40px;
-    font-size: 13px;
+    font-size: 14.5px;
     color: #454545;
     font-weight: 500;
 }
@@ -95,6 +164,12 @@ button:focus {
     letter-spacing: 7px;
 }
 
+.more-header {
+    text-align: center;
+    margin-top: -5%;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
 .feature-header-content {
     text-align: center;
     font-size: 12px;
@@ -145,6 +220,8 @@ button:focus {
 
 .titleWrapper > .text a{
     color: #4373f9;
+    margin-left: 10px;
+    font-size: 15px;
 }
 
 .titleWrapper > .text a:hover{
@@ -154,6 +231,7 @@ button:focus {
 
 .titleWrapper > .text .doubt-call {
     margin-top: 35px;
+    font-size: 13px;
 }
 .card-img-left {
     height: 494px;
@@ -171,23 +249,29 @@ button:focus {
 }
 
 .howItWorksInstruction span {
-    height: 77px;
-    width: 232px;
-    padding: 55px 45px;
+    width: 225px;
+    padding: 9px 45px;
     color: #a0a0a0;
     text-align: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     font-size: 15px;
-    cursor: pointer;
+    cursor: pointer
 }
 .howItWorksInstruction span:hover {
     color: #fff;
     background-color: #4373f9;
 }
+.howItWorksInstruction > span i {
+    font-size: 20px;
+    padding: 15px;
+}
+
 .section-divider {
-    width: 100%;
+    width: 100vw;
     border-top-color: #e5ecfe;
+    margin-left: -82px;
+    margin-top: 0px;
 }
 .spacer {
   margin-top: 97px;
@@ -196,6 +280,17 @@ button:focus {
     letter-spacing: 0 !important;  
 }
 
+.doubt-img {
+    height: 498px;
+    padding: 0px 0px 0px 130px;
+    width: 400px;
+}
+
+.card-img-doubt {
+        height: 250px;
+    object-fit: cover;
+    width: 200px;
+}
  .arrow {
     border: solid 2px #e0e0e0;
     border-radius: 50px;
@@ -215,22 +310,25 @@ button:focus {
 }
 
 .benefitIcon span {
-    height: 165px;
     width: 350px;
     color: #a0a0a0;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     cursor: pointer;
 }
-
+.benefitIcon > span i {
+    font-size: 35px;
+    padding: 12px;
+}
 .benefitIcon span:hover {
     color: #fff;
     background-color: #4373f9;
+    box-shadow: 7px 12px 16px 6px #e5ecfe;
 }
 
 .companies-logo span {
     color: #a0a0a0;
-    padding: 60px 100px;
+    padding: 60px 70px;
     text-align: center;
     font-size: 40px;
     cursor: pointer;
@@ -265,8 +363,9 @@ button:focus {
 .footer-bottom p {
     width: 100%;
     text-align: center;
-    font-size: 15px;
-    padding-top: 55px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    padding-top: 42px;
 }
 
 footer {
@@ -297,11 +396,59 @@ footer {
 }
 
 .search {
-    background-color: #6d6b6b;
-    border: 2px solid #6d6b6b;
+    padding: 23px;
+    width: 300px !important;
+    border-color: #484848;
+    background: #484848;
 }
 
 .search::placeholder {
     color: #fff !important;
     font-size: 12px;
+}
+
+.btnText {
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-left {
+    margin-right: 20px;
+}
+
+
+
+.footerSeed { 
+    background: #2d2d2d;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 125px;
+}
+
+.formInput {
+    margin-left: 100px;
+}
+
+.socialIcon {
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 73px;
+}
+.socialIcon > a i{
+    border: 2px solid #6d6b6b;
+    border-radius: 50px;
+    padding: 13px;
+    height: 45px;
+    width: 45px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.housy {
+    margin-left: 132px;
+}
+
+.accounts {
+    margin-right: 67px;
 }

@@ -23,7 +23,7 @@ module.exports = {
         use: ["style-loader","css-loader"]
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(gif|png|jpe?g|svg)$/i,
         loader: 'url-loader',
         options: {
           limit: 25000,
@@ -43,10 +43,9 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     port:3000,
-    open: true,
-    proxy: {
-      '/': 'http://localhost:8000'
-    }
+  //   proxy: {
+  //     '/': 'http://localhost:8000'
+  //   }
   },
   plugins: [htmlPlugin]
 };

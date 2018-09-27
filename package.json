@@ -45,8 +45,9 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
-    "start": "babel-node app.js"
+    "build": "rm -rf dist && webpack --mode production && npm run copy:img",
+    "start": "babel-node app.js",
+    "copy:img": "cp -r image dist/image"
   },
   "repository": {
     "type": "git",
